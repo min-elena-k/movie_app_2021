@@ -65,6 +65,14 @@ body,
     
 }
 
+.movies .movie a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+  }
+
 .movie .movie__title
 .movie .movie__year {
     margin: 0;

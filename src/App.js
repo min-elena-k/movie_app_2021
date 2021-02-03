@@ -1,8 +1,10 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
 import About from "./routes/About"
+import Detail from "./routes/Detail"
 import Home from "./routes/Home"
 import Navigation from './components/Navigation'
+
 
 
 /**Router 사용시 주의할 점!!
@@ -22,6 +24,7 @@ function App() {
     <Navigation />
     <Route path='/' exact={true} component={Home} />
     <Route path='/about' component={About}/>
+    <Route path='/movie/:id' component={Detail}/>
   </HashRouter>
 }
 
